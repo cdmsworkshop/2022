@@ -5,6 +5,6 @@ Template for Short Paper Submission for CDMS Workshop 2022
 
 - Abstract:
 
-- List of Authors (Please include Name, Affiliation and Email Addresses)
+- List of Authors (Please include Name, Affiliation and Email Address)
 
 - Primary Author for Contact
