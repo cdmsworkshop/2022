@@ -49,6 +49,9 @@
 						<a href="index.html">Home</a>
 					</li>
 					<li>
+						<a href="overview.html">Overview</a>
+					</li>
+					<li>
 						<a href="committee.html">Organization</a>
 					</li>
 					<li>
@@ -86,49 +89,26 @@
 				<h2>Workshop Venue: Sydney, Australia - Co-located with <b><a href="https://vldb.org/2022/">VLDB 2022</a></b></h2>
 				<h2>Workshop Date: 9th September 2022</h2>
 <hr>
-				<h3>Overview</h3>
-				<p align="justify">
-					There has been a steady increase in the number of data management systems (DM Systems) over the past decade, mainly driven by the rise in the diversity of the data workload. As a response, several specialized DM systems were built to handle the diversity in the <b>types of data</b> (key-value, relational, graph, documents, temporal data, geo-spatial data, machine learning features, etc), diversity in the <b>query workload</b> (analytical, operational, ML training, stream processing, real-time), diversity in the <b>storage</b> (tape, disk, flash, in-memory; co-located vs disaggregated; etc), and <b>resource ownership</b> (cloud vs on-premise). Highly specialized domains like machine learning and AI also required novel features which were not offered by traditional DM systems. This led to a highly fragmented DM systems landscape centered around <b>three pivots</b>: (i) user experience, (ii) experience of the engineers building the DM systems, and (iii) data modeling.
-				</p>
-				<p align="justify">
-The <b>end user experience</b>, mainly the query language and API offered by each DM system, is not uniform across systems. Even the semantics of the same built-in function is not guaranteed to be the same across DM systems. Unlike ANSI SQL which standardizes the way the end user interacts with a relational DBMS, there is no standard for designing language support for the specialized DM systems. This is because of the differences in the data modeling and the schema support of the DM systems. This also makes migration of users from one vendor to another non-trivial and time consuming.
-</p>
+<h1>Introduction</h1>
+<p align="justify">The aim of the CDMS workshop is to bring together database researchers, practitioners, developers and users from academia, business and industry to discuss and explore the area of building database management systems with emphasis on composability and reusability. In the first edition of the workshop, the program includes keynote talks, invited talks and short paper presentations. Please see <a href="overview.html"><b>an detailed overview</b></a> of the objectives of the workshop.</p>
+<h1>Program Overview</h1>
 <p align="justify">
-Oftentimes development teams operate under very tight timelines to build solutions driven by pressing business needs, e.g, to put a new product on the market or beat a competitor to a new market. This leads to solutions that are custom to solve the specific problem at hand. Hence, a rise in the diversity of use cases leads to a rise in the number of specialized DM systems, which in turn poses a <b>manageability and maintenance problem for the development teams</b> down the road. Most attempts at unification and convergence of such systems is an afterthought, at best, and when seriously done will run into challenges from poor architectural choices made earlier (e.g, monolithic system design).
-</p>
-<p align="justify">
-Due to the diversity of the data and the motivation to accelerate building DM systems, <b>data models</b> adopted by the DM systems have little in common. This will hinder the ability of engineers building the systems from sharing common components across systems as well as having a uniform language and API support. This also contributes to the diversity in user experience.
-</p>
-<p align="justify">
-<i>The central theme of this workshop is best expressed by a question: is there a way to build composable data management systems that facilitate unification and convergence of
-	<ol>
-		<li>the user experience,</li>
-		<li>engineering of the DM systems and</li>
-		<li>modeling of the data?</li>
-	</ol></i>
-</p>
-<p align="justify">
-Having common or translatable data models is probably the first step in this direction where the data model of one system can be easily mapped to that of the other. This also provides an opportunity to standardize language and semantics of the operations supported. Building modular systems by disaggregating the capabilities with clear input and output protocols on the lines of microservices / API can greatly improve the productivity of building complex DM systems for a particular use case. Open sourcing the basic building blocks offers great opportunities to share and build 'plug-n-play' type systems. For example, a typical DM system requires a query language parser, a query optimizer, a query execution engine and a transaction coordinator. Though the specific implementation of these modules differs from system to system, the core functionality that is common to all the systems can be offered by kernel modules. The specific DM system can reuse these modules and build on top of them by configuring and customizing the modules.
-</p>
-<p align="justify">
-Moving away from building monolithic systems solves the problem of "one size does not fits all". But building specialized DM systems in silos leads to lack of reusable components across the stack. This workshop offers a forum to discuss alternatives for building specialized DM systems that can be developed in a methodical and mature fashion with unified user experience and reusability as the main objectives. We welcome submissions with this broad theme: research papers that present new ideas, vision papers that discuss the future of the area, or industry papers that describe specific use-case.
-				</p>
-<h3>Topics</h3>
 <ul>
-<li>Unified data models that cater to a wide range of data shapes, types and use cases</li>
-<li>Standard language support. Support for both deferred mode execution (SQL) and eager/interactive development (e.g. REPL, host language execution (Python/PyTorch))
-Uniform operation semantics for interoperability across systems</li>
-<li>Engineering modular DM system components like parser, query optimizer, execution engine and transaction coordinator</li>
-<li>Query Processing and Optimization Techniques for composable DM systems</li>
-<li>Query Execution Techniques for composable DM systems</li>
-<li>Standardization of exchange protocols and API for different modules of DM systems</li>
-<li>Open source efforts for sharing composable DM modules</li>
+	<li><a href="keynote.html"><b>Keynote Talks</b></a></li>
+	<li><a href="invited.html"><b>Invited Talks</b></a></li>
+	<li><a href="cfp.html"><b>Short Paper Presentations</b></a></li>
 </ul>
-
-				<h2>Important Dates:</h2>
-				<h3>Workshop Date: 9th September 2022</h3>
-
-
+</p>
+<p align="justify">Please see <a href="program.html"><b>the detailed program</b></a> for more details</p>
+<h1>Important Dates</h1>
+<p align="justify">
+<ul>
+<li><b>Deadline for short paper submission:</b> <b><i>May 31st 2022, 5pm PST</i></b></li>
+<li><b>Date of notification to authors for short papers:</b> <b><i> June 20th 2022</i></b></li>
+<li><b>Camera ready submission for short papers:</b> <b><i> June 30th 2022</i></b></li>
+<li><b>Workshop Date:</b> <b><i> September 9th 2022</i></b></li>
+</ul>
+</p>
 				<div class="table-responsive">
 					<center>
 						<table class="table table-borderless">
